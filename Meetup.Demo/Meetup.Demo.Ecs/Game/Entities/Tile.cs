@@ -7,7 +7,7 @@ namespace Meetup.Demo.Ecs
 	{
 		public Tile(int x, int y,Data.Map.ID id) : base(0)
 		{
-			Rectangle source = new Rectangle();
+			var source = new Rectangle();
 
 			switch (id)
 			{

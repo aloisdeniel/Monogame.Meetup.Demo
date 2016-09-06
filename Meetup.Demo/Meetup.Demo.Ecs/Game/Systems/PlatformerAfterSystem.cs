@@ -22,10 +22,12 @@
 
 				if (body != null && character != null)
 				{
+					
 					character.OnGroud = body.LastMovement.Hits.Any((h) => h.Box.HasTag(LevelScene.CollisionGroup.Map) && h.Normal.Y < 0);
+					var touch = character.OnGroud || body.LastMovement.Hits.Any((h) => h.Box.HasTag(LevelScene.CollisionGroup.Map) && h.Normal.Y > 0);
 
 					// If on ground
-					if (character.OnGroud)
+					if (touch)
 					{
 						velocity.Y = 0;
 					}
