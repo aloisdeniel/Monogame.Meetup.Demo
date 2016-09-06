@@ -21,7 +21,7 @@ namespace Meetup.Demo.Basic
 				PlatformR,
 			}
 
-			public static ID[,] Tiles = new [,]
+			public static ID[,] Tiles =
 			{
 				{ID.Empty,	ID.Empty,	ID.Empty,	ID.Empty	,ID.Empty,	ID.Empty	,ID.Empty,	ID.Empty,	ID.Empty  , ID.Empty  , ID.Empty  , ID.Empty, },
 				{ID.Empty  ,ID.Empty  , ID.Empty  , ID.Empty	,ID.Empty  ,ID.Empty  ,ID.Empty  , ID.Empty  , ID.Empty  , ID.Empty  , ID.Empty  , ID.Empty, },
@@ -40,7 +40,7 @@ namespace Meetup.Demo.Basic
 
 		public static class Entities
 		{
-			public static Vector2[] Bananas = new []
+			public static Vector2[] Bananas =
 			{
 				new Vector2(100,60),
 				new Vector2(210,50),

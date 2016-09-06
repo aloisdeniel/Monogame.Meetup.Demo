@@ -1,10 +1,10 @@
-﻿using System;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Graphics;
-
-namespace Meetup.Demo.Basic
+﻿namespace Meetup.Demo.Basic
 {
+	using System;
+	using Microsoft.Xna.Framework;
+	using Microsoft.Xna.Framework.Audio;
+	using Microsoft.Xna.Framework.Graphics;
+
 	public class Player
 	{
 		public Player(Texture2D assets, SoundEffect jumpSound)
