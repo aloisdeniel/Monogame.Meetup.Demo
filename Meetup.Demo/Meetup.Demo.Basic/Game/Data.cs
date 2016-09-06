@@ -23,9 +23,9 @@ namespace Meetup.Demo.Basic
 
 			public static ID[,] Tiles =
 			{
-				{ID.Empty,	ID.Empty,	ID.Empty,	ID.Empty	,ID.Empty,	ID.Empty	,ID.Empty,	ID.Empty,	ID.Empty  , ID.Empty  , ID.Empty  , ID.Empty, },
-				{ID.Empty  ,ID.Empty  , ID.Empty  , ID.Empty	,ID.Empty  ,ID.Empty  ,ID.Empty  , ID.Empty  , ID.Empty  , ID.Empty  , ID.Empty  , ID.Empty, },
-				{ID.Empty  ,ID.Empty  , ID.Empty  , ID.Empty 	,ID.Empty  ,ID.Empty  ,ID.Empty  , ID.Empty  , ID.Empty  , ID.Empty  , ID.CornerL  , ID.Floor, },
+								{ID.Empty,  ID.Empty,   ID.Empty,   ID.Empty    ,ID.Empty,  ID.Empty    ,ID.Empty,  ID.Empty,   ID.Empty  , ID.Empty  , ID.Empty  , ID.Empty, },
+				{ID.Empty  ,ID.Empty  , ID.Empty  , ID.Empty    ,ID.Empty  ,ID.Empty   , ID.PlatformL  , ID.Platform, ID.PlatformR, ID.Empty   , ID.Empty  , ID.Empty, },
+				{ID.Empty  ,ID.Empty  , ID.Empty  , ID.Empty    ,ID.Empty  ,ID.Empty  ,ID.Empty  , ID.Empty  , ID.Empty  , ID.Empty  , ID.CornerL  , ID.Floor, },
 				{ID.Floor  ,ID.Floor  , ID.Floor  , ID.CornerR  ,ID.Empty  ,ID.Empty  ,ID.Empty  , ID.Empty  , ID.Empty  , ID.Empty  , ID.WallL  , ID.Fill, },
 				{ID.Fill  ,ID.Fill  , ID.Fill  , ID.WallR  ,ID.Empty  ,ID.Empty  ,ID.Empty  , ID.Empty  , ID.PlatformL  , ID.Platform  , ID.Fill  , ID.Fill, },
 				{ID.Fill  ,ID.Fill  , ID.Fill  , ID.WallR  ,ID.Empty  ,ID.Empty  ,ID.Empty  , ID.Empty  , ID.Empty  , ID.Empty  , ID.WallL  , ID.Fill, },
@@ -33,8 +33,7 @@ namespace Meetup.Demo.Basic
 				{ID.Fill  ,ID.Fill  , ID.Fill  , ID.Fill  ,ID.Fill  ,ID.Fill  ,ID.Fill  , ID.Fill  , ID.Fill  , ID.Fill  , ID.Fill  , ID.Fill, },
 				{ID.Fill  ,ID.Fill  , ID.Fill  , ID.Fill  ,ID.Fill  ,ID.Fill  ,ID.Fill  , ID.Fill  , ID.Fill  , ID.Fill  , ID.Fill  , ID.Fill, },
 				{ID.Fill  ,ID.Fill  , ID.Fill  , ID.Fill  ,ID.Fill  ,ID.Fill  ,ID.Fill  , ID.Fill  , ID.Fill  , ID.Fill  , ID.Fill  , ID.Fill, },
-				{ID.Fill  ,ID.Fill  , ID.Fill  , ID.Fill  ,ID.Fill  ,ID.Fill  ,ID.Fill  , ID.Fill  , ID.Fill  , ID.Fill  , ID.Fill  , ID.Fill, },
-			};
+				{ID.Fill  ,ID.Fill  , ID.Fill  , ID.Fill  ,ID.Fill  ,ID.Fill  ,ID.Fill  , ID.Fill  , ID.Fill  , ID.Fill  , ID.Fill  , ID.Fill, },	};
 		}
 
 
@@ -43,7 +42,7 @@ namespace Meetup.Demo.Basic
 			public static Vector2[] Bananas =
 			{
 				new Vector2(100,60),
-				new Vector2(210,50),
+				new Vector2(210,10),
 				new Vector2(300,124),
 				new Vector2(300,188),
 				new Vector2(220,188),

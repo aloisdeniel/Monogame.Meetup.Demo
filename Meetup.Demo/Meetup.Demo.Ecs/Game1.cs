@@ -50,6 +50,8 @@ namespace Meetup.Demo.Ecs
 			this.scene.LoadContent(this.Content);
 		}
 
+		private KeyboardState previous;
+
 		/// <summary>
 		/// Allows the game to run logic such as updating the world,
 		/// checking for collisions, gathering input, and playing audio.
@@ -63,6 +65,14 @@ namespace Meetup.Demo.Ecs
 			if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
 				Exit();
 #endif
+
+			var state = Keyboard.GetState();
+			if (previous.IsKeyUp(Keys.Enter) && state.IsKeyDown(Keys.Enter))
+			{
+				this.scene = new LevelScene(this.graphics, this.Content);
+				this.scene.Initialize();
+			}
+			previous = state;
 
 			this.scene.Update(gameTime);
 

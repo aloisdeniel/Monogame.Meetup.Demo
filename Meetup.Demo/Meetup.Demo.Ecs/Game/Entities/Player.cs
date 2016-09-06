@@ -15,8 +15,8 @@ namespace Meetup.Demo.Ecs
 			camera.Zoom = 4.0f;
 
 			var character = this.AddComponent<Character>();
-			character.Speed = 0.1f;
-			character.JumpPower = 0.80f;
+			character.Speed = 0.075f;
+			character.JumpPower = 0.60f;
 
 			var position = this.AddComponent<Position>();
 			position.X = x;
@@ -26,7 +26,7 @@ namespace Meetup.Demo.Ecs
 			sound.EffectPath = "jump";
 
 			var body = this.AddComponent<Body>();
-			body.Weight = 0.03f;
+			body.Weight = 0.02f;
 			body.Height = 18;
 			body.Width = 7;
 			body.Tag = LevelScene.CollisionGroup.Characters;
