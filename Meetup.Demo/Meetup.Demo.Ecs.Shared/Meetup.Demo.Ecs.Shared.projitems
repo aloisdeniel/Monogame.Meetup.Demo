@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{90A04355-A54F-4977-AEBD-EA9C88B9838D}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Meetup.Demo.Ecs.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Components\Body.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Components\Camera.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Components\Component.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Components\IComponent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Components\Input.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Components\Position.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Components\Sound.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Components\Sprite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Components\SpriteAnimation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Components\Velocity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Entities\Entity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Entities\IEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Scene.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Systems\AudioSystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Systems\InputsSystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Systems\ISystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Systems\PhysicsSystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Systems\RenderSystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Systems\SystemBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\Components\Character.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\Components\Pickup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\Data\Atlas.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\Data\Data.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\Entities\Banana.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\Entities\Player.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\Entities\Tile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\LevelScene.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\Systems\PlatformerAfterSystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\Systems\PlatformerBeforeSystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game1.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\Data\CollisionGroups.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\Data\Identifiers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Components\Extensions\VelocityExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Components\Extensions\PositionExtension.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Core\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Game\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Core\Components\Extensions\" />
+  </ItemGroup>
+</Project>
