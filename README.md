@@ -2,7 +2,7 @@
 
 ![Screenshot](./Documentation/Screenshot.png)
 
-**Slidedeck** : [FR](https://speakerdeck.com/aloisdeniel/monogame-introduction-fr) | [FR](https://speakerdeck.com/aloisdeniel/monogame-introduction-en)
+**Slidedeck** : [FR](https://speakerdeck.com/aloisdeniel/monogame-introduction-fr) | [EN](https://speakerdeck.com/aloisdeniel/monogame-introduction-en)
 
 This repository contains a sample game project presented at Meetups.
 
